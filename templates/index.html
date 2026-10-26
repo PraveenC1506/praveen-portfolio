@@ -1,0 +1,418 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Praveen C - Python Full Stack Developer Portfolio">
+    <title>Praveen C | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar container">
+        <a href="#home" class="brand" aria-label="Praveen home">
+            <span class="brand-p">P</span><span class="brand-name">raveen</span>
+            <span class="brand-line"></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a class="nav-link active" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#experience">Experience</a></li>
+            <li><a class="nav-link" href="#certifications">Certifications</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="grid-background"></div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="planet planet-large"></div>
+        <div class="planet planet-small"></div>
+        <div class="ambient-glow"></div>
+
+        <div class="hero-inner container">
+            <div class="hero-content">
+                <p class="eyebrow">
+                    <span class="eyebrow-line"></span>
+                    WELCOME TO MY PORTFOLIO
+                </p>
+
+                <h1>
+                    Hi, I'm<br>
+                    <span class="gradient-text">Praveen C</span>
+                </h1>
+
+                <h2>Python Full Stack Developer</h2>
+
+                <p class="hero-description">
+                    I build responsive websites and enjoy learning new
+                    technologies to solve real-world problems.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#about" class="primary-button">
+                        Explore My Portfolio
+                        <span class="button-arrow">→</span>
+                    </a>
+
+                    <a href="{% static 'files/Praveen_C_Resume.pdf' %}"
+                       class="resume-button"
+                       download="Praveen_C_Resume.pdf">
+                        <span class="download-icon">↓</span>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="portal">
+                    <div class="portal-shine"></div>
+                </div>
+                <div class="visual-line"></div>
+                <div class="visual-dots">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-line"></div>
+
+        <div class="hero-footer">
+            BUILD <span>•</span> LEARN <span>•</span> SOLVE <span>•</span> GROW
+        </div>
+
+        <a href="#about" class="scroll-down">
+            SCROLL DOWN <span>↓</span>
+        </a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="content-section container" id="about">
+        <p class="section-label">01 / ABOUT ME</p>
+
+        <h2>Building ideas into <span class="gradient-text">reality.</span></h2>
+
+        <p>
+            I'm Praveen C, a Computer Science graduate specializing in
+            Artificial Intelligence from Sathyabama Institute of Science
+            and Technology. I'm interested in Python full-stack development
+            and building responsive, practical web applications. I enjoy
+            learning new technologies and solving real-world problems
+            through software.
+        </p>
+
+        <div class="about-details">
+            <div class="detail-card">
+                <span class="detail-label">EDUCATION</span>
+                <h3>B.Sc. Computer Science (AI)</h3>
+                <p>Sathyabama Institute of Science and Technology</p>
+                <span class="detail-meta">2023 – 2026 · CGPA 6.98/10</span>
+            </div>
+
+            <div class="detail-card">
+                <span class="detail-label">CAREER FOCUS</span>
+                <h3>Full-Stack Development</h3>
+                <p>Building responsive interfaces and useful web applications.</p>
+                <span class="detail-meta">Entry-Level Developer</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="content-section container" id="skills">
+        <p class="section-label">02 / TECHNICAL SKILLS</p>
+
+        <h2>Tools I use to <span class="gradient-text">create.</span></h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <span class="skill-number">01</span>
+                <h3>Programming</h3>
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <span class="skill-number">02</span>
+                <h3>Web Development</h3>
+                <div class="skill-tags">
+                    <span>Django</span>
+                    <span>React.js</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <span class="skill-number">03</span>
+                <h3>Database</h3>
+                <div class="skill-tags">
+                    <span>PostgreSQL</span>
+                    <span>MySQL</span>
+                    <span>SQL</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <span class="skill-number">04</span>
+                <h3>Developer Tools</h3>
+                <div class="skill-tags">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Postman</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="content-section container" id="projects">
+        <p class="section-label">03 / SELECTED WORK</p>
+
+        <h2>Projects I've <span class="gradient-text">built.</span></h2>
+
+        <div class="projects-grid">
+
+            <!-- PROJECT 01: FITNESS MANAGEMENT -->
+            <article class="project-card">
+                <div class="project-image">
+                    <img
+                        src="{% static 'images/fitness-dashboard.png' %}"
+                        alt="Intelligent Fitness Management System homepage"
+                        loading="lazy">
+                </div>
+
+                <div class="project-top">
+                    <span class="project-index">PROJECT 01</span>
+                    <span class="project-symbol">↗</span>
+                </div>
+
+                <h3>Intelligent Fitness Management System</h3>
+
+                <p>
+                    A web application designed to help users manage fitness
+                    activities, track workouts and monitor their progress
+                    through a dashboard.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Web Development</span>
+                    <span>Database</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://intelligent-fitness-management-system.onrender.com/"
+                       target="_blank" rel="noopener noreferrer">
+                        Live Demo <span>↗</span>
+                    </a>
+
+                    <a href="https://github.com/PraveenC1506/intelligent-fitness-management-system"
+                       target="_blank" rel="noopener noreferrer">
+                        GitHub <span>↗</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- PROJECT 02: SMART INVENTORY -->
+            <article class="project-card">
+                <div class="project-image">
+                    <img
+                        src="{% static 'images/inventory-dashboard.png' %}"
+                        alt="Smart Inventory Management System dashboard"
+                        loading="lazy">
+                </div>
+
+                <div class="project-top">
+                    <span class="project-index">PROJECT 02</span>
+                    <span class="project-symbol">↗</span>
+                </div>
+
+                <h3>Smart Inventory Management System</h3>
+
+                <p>
+                    A web application for managing products and monitoring
+                    stock, with low-stock alerts and reports to support
+                    inventory tracking.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>Database</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://smart-inventory-system-1u1q.onrender.com/"
+                       target="_blank" rel="noopener noreferrer">
+                        Live Demo <span>↗</span>
+                    </a>
+
+                    <a href="https://github.com/PraveenC1506/smart-inventory-system"
+                       target="_blank" rel="noopener noreferrer">
+                        GitHub <span>↗</span>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="content-section container" id="experience">
+        <p class="section-label">04 / EXPERIENCE</p>
+
+        <h2>Learning through <span class="gradient-text">experience.</span></h2>
+
+        <div class="experience-list">
+
+            <article class="experience-item">
+                <div class="experience-marker"></div>
+
+                <div class="experience-heading">
+                    <div>
+                        <h3>Software Development Intern</h3>
+                        <p class="experience-company">UTH Software</p>
+                    </div>
+
+                    <span class="experience-date">Apr 2026 – Jun 2026</span>
+                </div>
+
+                <p class="experience-description">
+                    Worked on React.js user interfaces, production support,
+                    API testing with Postman, and store integration and
+                    data validation tasks.
+                </p>
+
+                <div class="project-tags">
+                    <span>React.js</span>
+                    <span>Postman</span>
+                    <span>API Testing</span>
+                </div>
+            </article>
+
+            <article class="experience-item">
+                <div class="experience-marker"></div>
+
+                <div class="experience-heading">
+                    <div>
+                        <h3>Python Web Development Intern</h3>
+                        <p class="experience-company">Ednue Technologies</p>
+                    </div>
+
+                    <span class="experience-date">Jun 2025 · 15 days</span>
+                </div>
+
+                <p class="experience-description">
+                    Practised responsive web development using HTML and CSS,
+                    including the development of Home and About Us pages.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Responsive Design</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section class="content-section container" id="certifications">
+        <p class="section-label">05 / CERTIFICATIONS</p>
+
+        <h2>Learning never <span class="gradient-text">stops.</span></h2>
+
+        <div class="certifications-grid">
+
+            <div class="certification-card">
+                <div class="cert-icon">✳</div>
+                <div>
+                    <h3>Python Full Stack Development</h3>
+                    <p>Zukun Academy</p>
+                </div>
+                <span class="cert-arrow">↗</span>
+            </div>
+
+            <div class="certification-card">
+                <div class="cert-icon">✳</div>
+                <div>
+                    <h3>Python Web Development</h3>
+                    <p>Ednue Technologies</p>
+                </div>
+                <span class="cert-arrow">↗</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="content-section container" id="contact">
+        <p class="section-label">06 / GET IN TOUCH</p>
+
+        <h2>Let's build something <span class="gradient-text">great.</span></h2>
+
+        <p>
+            Open to entry-level opportunities and collaborations.
+            Feel free to connect with me.
+        </p>
+
+        <a href="mailto:praveenpraveen150605@gmail.com"
+           class="primary-button contact-button">
+            Contact Me <span class="button-arrow">→</span>
+        </a>
+
+        <div class="social-links">
+            <a href="https://github.com/PraveenC1506"
+               target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">GH</span>
+                GitHub ↗
+            </a>
+
+            <a href="https://linkedin.com/in/praveenc1505"
+               target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">in</span>
+                LinkedIn ↗
+            </a>
+
+            <a href="mailto:praveenpraveen150605@gmail.com">
+                <span class="social-icon">@</span>
+                Email ↗
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>© <span id="year"></span> Praveen C. All rights reserved.</p>
+</footer>
+
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
